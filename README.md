@@ -92,4 +92,45 @@ Sayfaların metadata dediğimiz tarayıcıda öne çıkması için ihtiyacı ola
 Bir sayfa için metadata tanımlamak istiyorsak os sayfanın dosyasında bir metadata isimli nesne oluşturmak ve onu export etmek gerekli
 
 Dynamic sayfalarda metadata'nında dinamik olmasını isteyebiliyoruz. Örneğin Ürün - 10 gibi bir başlık isteyebiliriz ve bu 10 sayısı urldeki parametreye göre değişiri. Bu tarz durumlarda sabir bir metadata nesnesi olulturak yerine onu oluşturucak olan bir generateMetadata() fonksiyonu kullanırız
-# Next.js_Routing_basic
+
+# Layout
+
+- Bir uygulamanın veya sayfa grubunun genel dizaynını berlirlememize yardımcı olan yapı.
+
+- Bir sayfa grubunun ortak olarak kullandığı bileşenleri layout'a tanımlayıp kod tekrarını önleyebiliyoruz.
+
+- Root layout'a yaptığımı zdeğişiklikler bütün sayfaları etkiler.
+  Ama bazı durumlarda sadece bir kaç sayfanın ortak olarak kullanıcağı bir düzen belirlemek isteyebiliriz.
+
+# Özel Dosyalar
+
+- Page.jsx
+- Layout.jsx
+- Template.jsx
+
+- Loading.jsx
+- - bir bileşen awit ile async bir fonkaiyonun beklediği sürede ekrana gelir.
+
+- Error.jsx
+- - bir bileşende hata fırlatıldığı durumda devreye girer
+- - prop olarak gelen hatanın bilgilerini ve sayfayı tekrar render etmeye yarayann metodu alır.
+
+# Static Dynamic Page
+
+- Next.js'de farklı türde sayfa bulunur.
+
+1. Static:
+
+- Derleme sırasında sunucu tarafından oluştururlur ve birkez oluşturulduktan sonra her sayfayı açışımızda aynı içeriği sunar.
+
+- Static sayfalar genellikle sıklıkla değişmeyen içeriğe sahip olan sayfalardır.
+
+- Bir sitenin login / signup, haakımızda, iletişim sayfaları örenk verilebilir.
+
+2. Dynamic Page
+
+- Dinamik sayfalar her sayfayı açtığımızda sunucu tarafından tekrar oluşturulur.
+
+- Sayfa içeriğiistek anındaki parametrelerle veya dış kaynakalrdanalınan verilere göre değişebilir.
+
+- Örnek: Bir e ticaret sitesi ürün detay sayfası buna örnek verilebilir.Alınan parametreye göre içerik değişir.Twitterın anasayfası örenk verilebilir.Parametre değişmiyor olsa da ekrana gelen tweetlwr sürekli değişir.

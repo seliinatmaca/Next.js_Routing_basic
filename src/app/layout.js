@@ -29,8 +29,13 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="grid items-center items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] text-3xl">
-          {children}
+        <div className="flex flex-col min-h-screen">
+          <header className="p-5 border-b text-center">Header</header>
+          <div className="grid items-center items-center justify-items-center flex-1 p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] text-3xl">
+            {children}
+          </div>
+
+          <footer className="p-5 border-t text-center">Footer</footer>
         </div>
       </body>
     </html>

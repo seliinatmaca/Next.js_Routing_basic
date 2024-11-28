@@ -19,3 +19,12 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.nav a{
+  padding: 10px 20px;
+  transform: all 0.3;
+}
+
+.nav .active {
+  background: gray;
+}
